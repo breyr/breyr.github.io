@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/4137f8921b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo_icon.png" />
+  <title>Brey R</title>
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <div id="mobile-menu" class="mobile-main-menu">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Brey R" />
+      </a>
+    </div>
+    <ul>
+      <li class="mobile-only"><a href="#section-about" id="m1">About</a></li>
+      <li class="mobile-only">
+        <a href="#section-projects" id="m2">Projects</a>
+      </li>
+      <li class="mobile-only"><a href="#contact" id="m3">Contact</a></li>
+    </ul>
+  </div>
+
+  <header class="main-header">
+    <div class="logo" id="desktop-logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Brey R" />
+      </a>
+    </div>
+    <nav class="desktop-main-menu">
+      <ul>
+        <li><a href="#section-about">About</a></li>
+        <li><a href="#section-projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hamburger Menu -->
+  <button id="menu-btn" class="hamburger" type="button">
+    <span class="hamburger-top"></span>
+    <span class="hamburger-middle"></span>
+    <span class="hamburger-bottom"></span>
+  </button>
+
+  <div class="screen">
+    <!-- landing -->
+    <section id="section-landing">
+      <div class="section-inner landing">
+        <h1 id="hello">
+          Hello friend
+          <span class="dot1">.</span>
+          <span class="dot2">.</span>
+          <span class="dot3">.</span>
+        </h1>
+      </div>
+
+      <div class="scroll-arrow" id="landing-arrow">
+        <svg width="30px" height="20px">
+          <path stroke="#ffffff" fill="none" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="section-about">
+      <div class="section-inner about">
+        <h1>`${about_me}`</h1>
+        <p>
+          Hello, welcome to my website! I'm Brey, a Sophomore at Arcadia
+          University pursuing a B.S in Data Science as well as a B.S. in
+          Computer Science. I've had a passion for web design, and coding in
+          general, since I was in 7th grade. I love the space industry, one
+          day I hope to watch a SpaceX landing in person. In my spare time, I
+          play Destiny 2 (I have been playing the Destiny franchise since
+          2014). I particiate in coding competitions such ICPC and CCSC.
+          Currently I'm learning Data Structures and Algorithms outside of my
+          courses this semester. I'm also currently working on a side project
+          that utilizes Flask and Jinja. Some languages I'm familiar with are
+          SQL, Java, Javascript, Python, HTML and CSS. I just got my first AWS
+          Certification this Summer (2022)! Feel free to check out my
+          <a href="pdfs/Resume.pdf" target="_blank">résumé</a>!
+        </p>
+      </div>
+
+      <div class="scroll-arrow" id="about-arrow">
+        <svg width="30px" height="20px">
+          <path stroke="#ffffff" fill="none" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <div id="section-projects">
+      <div class="section-inner project-header">
+        <h1>`${projects}`</h1>
+        <div class="projects-container">
+          <a href="https://github.com/breyr/stockwyse" target="_blank">
+            <div class="project purple appear2">
+              <h2>stockWYSE</h2>
+              <h4>
+                Simple Flask application utilizing Firebase and Finnhub.io
+                stock api
+              </h4>
+            </div>
+          </a>
+          <a href="https://github.com/breyr/Availy-bot" target="_blank">
+            <div class="project blue appear2">
+              <h2>Availy</h2>
+              <h4>Slack Bot for Arcadia Univeristy IT Deparment</h4>
+            </div>
+          </a>
+          <a href="https://github.com/AdamSpera/simwork" target="_blank">
+            <div class="project purple appear2">
+              <h2>SimWork</h2>
+              <h4>desktop frontend</h4>
+            </div>
+          </a>
+          <a href="https://laundrylott.com/" target="_blank">
+            <div class="project blue appear2">
+              <h2>Laundry Lott</h2>
+              <h4>frontend design</h4>
+            </div>
+          </a>
+          <a href="pdfs/Java Final Project.pdf" target="_blank">
+            <div class="project purple appear2">
+              <h2>JavaFX Paint</h2>
+              <h4>Final project for CS202</h4>
+            </div>
+          </a>
+          <a href="pdfs/Amazon Giftcard Reviews.pdf" target="_blank">
+            <div class="project blue appear2">
+              <h2>Amazon Gift Card Reviews</h2>
+              <h4>
+                Used Python and Weka to predict product star ratings based on
+                review text
+              </h4>
+            </div>
+          </a>
+          <a href="pdfs/Database Final Project.pdf" target="_blank">
+            <div class="project purple appear2">
+              <h2>Destiny Dump Database</h2>
+              <h4>SQLITE Database of All Destiny 2 Weapons</h4>
+            </div>
+          </a>
+          <a href="pdfs/2015 Flights EDA.pdf" target="_blank">
+            <div class="project blue appear2">
+              <h2>2015 Flights EDA</h2>
+              <h4>Exploratory Data Analysis of all US Flights in 2015</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <ul>
+        <li>Brey Rivera &copy; 2022</li>
+        <li>
+          <a href="https://www.linkedin.com/in/breyrivera/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/breyr" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
