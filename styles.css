@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --black: #2b2730;
+  --gray-light: #e4e4e4;
+  --purple: #6554af;
+  --purple-light: #9575de;
+  --blue: #75afde;
+  --pink: #e966a0;
+  --font-size-base: 1rem;
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --border-radius: 5px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--gray-light);
+  font-size: var(--font-size-base);
+  background-color: var(--black);
+  margin: 0;
+}
+
+a {
+  color: var(--gray-light);
+}
+a:hover {
+  cursor: pointer;
+}
+h1 {
+  font-size: var(--font-size-xl);
+}
+h2 {
+  font-size: var(--font-size-lg);
+  margin: 0;
+}
+h3 {
+  font-size: var(--font-size-md);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  width: 50%;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+/* Layout */
+.container {
+  align-items: center;
+  max-width: 982px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main {
+  height: 90vh;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto;
+  padding-top: 10px;
+  grid-template-areas: 'logo space menu';
+}
+
+/* @media only screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 'logo menu spacer';
+  }
+} */
+
+.header__logo {
+  grid-area: logo;
+  font-weight: 800;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.header__logo span {
+  color: var(--purple);
+}
+
+.header__nav {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  font-weight: 400;
+  padding: 0;
+}
+
+.header__nav ul a {
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.6s;
+}
+
+.header__nav ul a:hover {
+  color: var(--pink);
+}
+
+/* Author */
+.author {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.author__heading {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.author__body {
+  font-size: var(--font-size-md);
+  margin: 5px 0 40px 0;
+  color: var(--purple-light);
+}
+
+/* About */
+.about {
+  padding: 15px;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about__text {
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 75px;
+  width: 80%;
+}
+
+.about__resume {
+  transition: color 0.6s;
+}
+
+.about__resume:hover {
+  color: var(--pink);
+}
+
+/* Projects */
+.projects {
+  padding: 15px;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.projects__container a {
+  text-decoration: none;
+}
+
+.projects__card {
+  max-width: 250px;
+  width: 250px;
+  height: 200px;
+  margin: 10px 10px;
+  padding: 0 25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2px;
+  transition: color 0.6s;
+  font-size: var(--font-size-base);
+  background-color: var(--gray-light);
+  color: var(--black);
+}
+
+.projects__card:hover {
+  background-color: var(--pink);
+  color: var(--gray-light);
+}
+
+.appear2 {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.appear2.inview2 {
+  opacity: 1;
+  transform: none;
+}
+
+.appear2.inview2:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.appear2.inview2:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.appear2.inview2:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.projects__card h4 {
+  margin-bottom: 0;
+}
+
+/* Footer  */
+.footer {
+  margin: 4rem;
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 400;
+  padding: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,183 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/4137f8921b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/logo_icon.png" />
-  <title>Brey R</title>
-</head>
-
-<body>
-  <div id="overlay"></div>
-  <div id="mobile-menu" class="mobile-main-menu">
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/logo.png" alt="Brey R" />
-      </a>
-    </div>
-    <ul>
-      <li class="mobile-only"><a href="#section-about" id="m1">About</a></li>
-      <li class="mobile-only">
-        <a href="#section-projects" id="m2">Projects</a>
-      </li>
-      <li class="mobile-only"><a href="#contact" id="m3">Contact</a></li>
-    </ul>
-  </div>
-
-  <header class="main-header">
-    <div class="logo" id="desktop-logo">
-      <a href="index.html">
-        <img src="images/logo.png" alt="Brey R" />
-      </a>
-    </div>
-    <nav class="desktop-main-menu">
-      <ul>
-        <li><a href="#section-about">About</a></li>
-        <li><a href="#section-projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hamburger Menu -->
-  <button id="menu-btn" class="hamburger" type="button">
-    <span class="hamburger-top"></span>
-    <span class="hamburger-middle"></span>
-    <span class="hamburger-bottom"></span>
-  </button>
-
-  <div class="screen">
-    <!-- landing -->
-    <section id="section-landing">
-      <div class="section-inner landing">
-        <h1 id="hello">
-          Hello friend
-          <span class="dot1">.</span>
-          <span class="dot2">.</span>
-          <span class="dot3">.</span>
-        </h1>
-      </div>
-
-      <div class="scroll-arrow" id="landing-arrow">
-        <svg width="30px" height="20px">
-          <path stroke="#ffffff" fill="none" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000"></path>
-        </svg>
-      </div>
-    </section>
-
-    <!-- about -->
-    <section id="section-about">
-      <div class="section-inner about">
-        <h1>`${about_me}`</h1>
-        <p>
-          Hello, welcome to my website! I'm Brey, a Sophomore at Arcadia
-          University pursuing a B.S in Data Science as well as a B.S. in
-          Computer Science. I've had a passion for web design, and coding in
-          general, since I was in 7th grade. I love the space industry, one
-          day I hope to watch a SpaceX landing in person. In my spare time, I
-          play Destiny 2 (I have been playing the Destiny franchise since
-          2014). I particiate in coding competitions such ICPC and CCSC.
-          Currently I'm currently learning Databricks while interning at Optum as a Data Engineer intern. Feel free to
-          check out my
-          <a href="pdfs/Resume.pdf" target="_blank">résumé</a>!
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brey Rivera</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4137f8921b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="/" class="header__logo"><span>{</span> BR <span>}</span></a>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#about" class="">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="author">
+          <h1 class="author__heading">Howdy! I'm Brey.</h1>
+          <p class="author__body">Data Engineer Intern</p>
+        </div>
+      </main>
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <hr />
+        <p class="about__text">
+          Howdy! I'm Brey, a Junior at Arcadia University pursuing a B.S in Data
+          Science as well as a B.S. in Computer Science. I've had a passion for
+          web design, and coding in general, since I was in 7th grade. I love
+          the space industry, and have been lucky enough to witness a night
+          launch of a Falcon 9! In my spare time, I play Destiny 2 (I have been
+          playing the Destiny franchise since 2014). I particiate in coding
+          competitions such ICPC and CCSC. Currently I'm currently learning
+          Databricks while interning at Optum as a Data Engineer intern. Feel
+          free to check out my
+          <a href="pdfs/Resume.pdf" target="_blank" class="about__resume"
+            >résumé</a
+          >!
         </p>
-      </div>
+      </section>
 
-      <div class="scroll-arrow" id="about-arrow">
-        <svg width="30px" height="20px">
-          <path stroke="#ffffff" fill="none" stroke-width="2px" d="M2.000,5.000 L15.000,18.000 L28.000,5.000"></path>
-        </svg>
-      </div>
-    </section>
-
-    <!-- projects -->
-    <div id="section-projects">
-      <div class="section-inner project-header">
-        <h1>`${projects}`</h1>
-        <div class="projects-container">
+      <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <hr />
+        <div class="projects__container">
           <a href="https://github.com/breyr/stockwyse" target="_blank">
-            <div class="project purple appear2">
-              <h2>stockWYSE</h2>
-              <h4>
-                Simple Flask application utilizing Firebase and Finnhub.io
-                stock api
-              </h4>
+            <div class="projects__card appear2">
+              <h4>StockWYSE</h4>
+              <p>
+                Simple flask application utilizing firebase and finnhub.io stock
+                api
+              </p>
             </div>
           </a>
           <a href="https://github.com/breyr/Availy-bot" target="_blank">
-            <div class="project blue appear2">
-              <h2>Availy</h2>
-              <h4>Slack Bot for Arcadia Univeristy IT Deparment</h4>
-            </div>
-          </a>
-          <a href="https://github.com/AdamSpera/simwork" target="_blank">
-            <div class="project purple appear2">
-              <h2>SimWork</h2>
-              <h4>desktop frontend</h4>
-            </div>
-          </a>
-          <a href="https://laundrylott.com/" target="_blank">
-            <div class="project blue appear2">
-              <h2>Laundry Lott</h2>
-              <h4>frontend design</h4>
-            </div>
-          </a>
-          <a href="pdfs/Java Final Project.pdf" target="_blank">
-            <div class="project purple appear2">
-              <h2>JavaFX Paint</h2>
-              <h4>Final project for CS202</h4>
-            </div>
-          </a>
-          <a href="pdfs/Amazon Giftcard Reviews.pdf" target="_blank">
-            <div class="project blue appear2">
-              <h2>Amazon Gift Card Reviews</h2>
-              <h4>
-                Used Python and Weka to predict product star ratings based on
-                review text
-              </h4>
+            <div class="projects__card appear2">
+              <h4>Availy</h4>
+              <p>Slack bot for Arcadia University IT department</p>
             </div>
           </a>
           <a href="pdfs/Database Final Project.pdf" target="_blank">
-            <div class="project purple appear2">
-              <h2>Destiny Dump Database</h2>
-              <h4>SQLITE Database of All Destiny 2 Weapons</h4>
+            <div class="projects__card appear2">
+              <h4>Destiny Dump Database</h4>
+              <p>
+                SQLITE database of all Destiny 2 weapons with Python interface
+              </p>
+            </div>
+          </a>
+          <a href="pdfs/Java Final Project.pdf" target="_blank">
+            <div class="projects__card appear2">
+              <h4>JavaFX Paint</h4>
+              <p>Final project for CS202 course at Arcadia University</p>
+            </div>
+          </a>
+          <a href="pdfs/Amazon Giftcard Reviews.pdf" target="_blank">
+            <div class="projects__card appear2">
+              <h4>Amazon Gift Card Reviews</h4>
+              <p>
+                Utilized Python and Weka to predict product star ratings based
+                on review text
+              </p>
             </div>
           </a>
           <a href="pdfs/2015 Flights EDA.pdf" target="_blank">
-            <div class="project blue appear2">
-              <h2>2015 Flights EDA</h2>
-              <h4>Exploratory Data Analysis of all US Flights in 2015</h4>
+            <div class="projects__card appear2">
+              <h4>2015 Flights EDA</h4>
+              <p>Exploratory data analysis of all US flights in 2015</p>
             </div>
           </a>
           <a href="https://cm268.com/spring2023/brey/wp/" target="_blank">
-            <div class="project purple appear2">
-              <h2>Rocket Dish</h2>
-              <h4>My Wordpress blog from CM268 course at Arcadia University</h4>
+            <div class="projects__card appear2">
+              <h4>Rocket Dish</h4>
+              <p>My Wordpress blog from CM268 course at Arcadia University</p>
+            </div>
+          </a>
+          <a href="https://github.com/AdamSpera/simwork" target="_blank">
+            <div class="projects__card appear2">
+              <h4>SIMWORK</h4>
+              <p>Frontend Design</p>
+            </div>
+          </a>
+          <a href="https://laundrylott.com/" target="_blank">
+            <div class="projects__card appear2">
+              <h4>Laundry Lott</h4>
+              <p>Frontend Design</p>
             </div>
           </a>
         </div>
-      </div>
+      </section>
+      <footer class="footer" id="contact">
+        <ul>
+          <li>&copy; 2023 Brey Rivera</li>
+          <li>
+            <a href="https://www.linkedin.com/in/breyrivera/" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/breyr" target="_blank"
+              ><i class="fa-brands fa-github-alt"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
     </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-      <ul>
-        <li>Brey Rivera &copy; 2022</li>
-        <li>
-          <a href="https://www.linkedin.com/in/breyrivera/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/breyr" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
-        </li>
-      </ul>
-    </footer>
-  </div>
-
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
