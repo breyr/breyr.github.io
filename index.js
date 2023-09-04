@@ -1,3 +1,8 @@
+let yearHolder = document.getElementById('year');
+window.onload = function () {
+  yearHolder.innerHTML = new Date().getFullYear();
+};
+
 // fade in animation on scrolling for project divs
 const items = document.querySelectorAll('.appear2');
 
