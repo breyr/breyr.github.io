@@ -1,8 +1,6 @@
-// similar behavior as an HTTP redirect
-window.location.replace('https://breyr.dev');
-
 let yearHolder = document.getElementById('year');
 window.onload = function () {
+  window.location.replace('https://breyr.dev');
   yearHolder.innerHTML = new Date().getFullYear();
 };
 
